@@ -1,0 +1,72 @@
+<!DOCTYPE html>	
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"  href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet"  href="css/css.css">
+<link rel="stylesheet"  href="css/animate.css">
+
+
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<title>Mi Primera Pagina web</title>
+
+</head>
+<body>
+
+<nav class="se-gris padding-largo text-center">
+<ul class="no-lista">
+<li class="col-md-3 inline-block pacifico"><img src="img/es.jpg" width='50' height='30' ></li>
+<li class="col-md-3 inline-block pacifico"><img src="img/gb.png" width='50' height='30' ></li>
+<li class="col-md-3 inline-block pacifico"><img src="img/fr.png" width='50' height='30' ></li>
+<li class="col-md-3 inline-block pacifico"><img src="img/de.png" width='50' height='30' ></li>
+<li class="col-md-3 inline-block pacifico"><img src="img/it.png" width='50' height='30' ></li>
+</ul>
+</nav>
+
+
+
+
+
+
+
+
+<div class="col-md-6 center-block quitar-float text-center espacio-arriba">
+
+<img src="img/i.png" class="vete-arriba animated fadeIn">
+
+
+
+  <h4></h4>
+  <h4></h4>
+  <h4></h4>
+
+<div class="pacifico verde  mediano animated fadeIn"  id="cuentavisitas"></div>
+<script>yu=function(id){return document.getElementById(id);}
+if(localStorage){
+if(localStorage['visitas']==undefined){
+localStorage['visitas']=0;/* Codigo por http://adan-2994.es.tl/Contador_de_visitas_javascript.htm */
+}var n=parseInt(localStorage['visitas']);localStorage['visitas']=1+n;
+var num=localStorage['visitas'];
+
+var mensaje="Hasta ahora has visitado mi pagina " + num + " Veces !";
+
+yu('cuentavisitas').innerHTML=mensaje;}</script>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
